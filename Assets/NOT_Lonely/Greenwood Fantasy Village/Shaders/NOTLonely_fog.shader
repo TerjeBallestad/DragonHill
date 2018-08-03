@@ -1,0 +1,242 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Shader created with Shader Forge v1.36 
+// Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
+// Note: Manually altering this data may prevent you from opening it in Shader Forge
+/*SF_DATA;ver:1.36;sub:START;pass:START;ps:flbk:NOT_Lonely/Mobile/NOTLonely_Fog_mobile,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:3,bdst:7,dpts:2,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:False,aust:False,igpj:True,qofs:1,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0,fgcg:0,fgcb:0,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4795,x:33384,y:32699,varname:node_4795,prsc:2|diff-2393-OUT,emission-7869-OUT,alpha-1820-OUT;n:type:ShaderForge.SFN_Tex2d,id:6074,x:32232,y:32496,varname:_Noise01,prsc:2,ntxv:0,isnm:False|TEX-6372-TEX;n:type:ShaderForge.SFN_Multiply,id:2393,x:32746,y:32724,varname:node_2393,prsc:2|A-2053-RGB,B-797-RGB;n:type:ShaderForge.SFN_VertexColor,id:2053,x:32235,y:32772,varname:node_2053,prsc:2;n:type:ShaderForge.SFN_Color,id:797,x:32235,y:33061,ptovrint:True,ptlb:Color,ptin:_TintColor,varname:_TintColor,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Multiply,id:798,x:32698,y:33084,varname:node_798,prsc:2|A-907-OUT,B-2053-A,C-797-A,D-3137-R,E-3420-OUT;n:type:ShaderForge.SFN_DepthBlend,id:3420,x:32395,y:33273,varname:node_3420,prsc:2|DIST-1438-OUT;n:type:ShaderForge.SFN_Slider,id:1438,x:31971,y:33396,ptovrint:False,ptlb:Softness,ptin:_Softness,varname:_Softness,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:3,max:5;n:type:ShaderForge.SFN_Tex2d,id:3137,x:32757,y:32147,ptovrint:False,ptlb:Mask,ptin:_Mask,varname:_Mask,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_ValueProperty,id:7832,x:32805,y:32924,ptovrint:False,ptlb:Emission,ptin:_Emission,varname:_Emission,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0;n:type:ShaderForge.SFN_Multiply,id:7869,x:33021,y:32797,varname:node_7869,prsc:2|A-2393-OUT,B-7832-OUT;n:type:ShaderForge.SFN_Panner,id:1099,x:31926,y:32278,varname:node_1099,prsc:2,spu:1,spv:0|UVIN-4627-OUT,DIST-8022-OUT;n:type:ShaderForge.SFN_Tex2dAsset,id:6372,x:31899,y:32586,ptovrint:True,ptlb:Noise,ptin:_MainTex,varname:_MainTex,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:637,x:32232,y:32272,varname:_Noise02,prsc:2,ntxv:0,isnm:False|UVIN-1099-UVOUT,TEX-6372-TEX;n:type:ShaderForge.SFN_TexCoord,id:7554,x:31391,y:32172,varname:node_7554,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Time,id:677,x:31146,y:32638,varname:node_677,prsc:2;n:type:ShaderForge.SFN_ValueProperty,id:4216,x:31418,y:32900,ptovrint:False,ptlb:Speed,ptin:_Speed,varname:_Speed,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.3;n:type:ShaderForge.SFN_Multiply,id:8022,x:31640,y:32595,varname:node_8022,prsc:2|A-9598-OUT,B-4216-OUT;n:type:ShaderForge.SFN_Multiply,id:907,x:32501,y:32283,varname:node_907,prsc:2|A-637-R,B-6074-R;n:type:ShaderForge.SFN_Multiply,id:4627,x:31625,y:32219,varname:node_4627,prsc:2|A-7554-UVOUT,B-7329-OUT;n:type:ShaderForge.SFN_Vector1,id:7329,x:31443,y:32370,varname:node_7329,prsc:2,v1:0.5;n:type:ShaderForge.SFN_Multiply,id:9598,x:31418,y:32648,varname:node_9598,prsc:2|A-677-TSL,B-7329-OUT;n:type:ShaderForge.SFN_ViewPosition,id:203,x:32017,y:33691,varname:node_203,prsc:2;n:type:ShaderForge.SFN_FragmentPosition,id:8169,x:32004,y:33549,varname:node_8169,prsc:2;n:type:ShaderForge.SFN_Distance,id:9738,x:32242,y:33584,varname:node_9738,prsc:2|A-8169-XYZ,B-203-XYZ;n:type:ShaderForge.SFN_Clamp01,id:8509,x:32801,y:33408,varname:node_8509,prsc:2|IN-9306-OUT;n:type:ShaderForge.SFN_Lerp,id:7450,x:32977,y:33250,varname:node_7450,prsc:2|A-5547-OUT,B-798-OUT,T-8509-OUT;n:type:ShaderForge.SFN_Vector1,id:5547,x:32698,y:33317,varname:node_5547,prsc:2,v1:0;n:type:ShaderForge.SFN_Divide,id:3577,x:32501,y:33575,varname:node_3577,prsc:2|A-9738-OUT,B-7400-OUT;n:type:ShaderForge.SFN_Vector1,id:7400,x:32307,y:33735,varname:node_7400,prsc:2,v1:1;n:type:ShaderForge.SFN_Power,id:9306,x:32720,y:33575,varname:node_9306,prsc:2|VAL-3577-OUT,EXP-7310-OUT;n:type:ShaderForge.SFN_Vector1,id:7310,x:32543,y:33735,varname:node_7310,prsc:2,v1:1.2;n:type:ShaderForge.SFN_Dot,id:4799,x:33017,y:33452,varname:node_4799,prsc:2,dt:0|A-5681-OUT,B-4633-OUT;n:type:ShaderForge.SFN_ViewVector,id:5681,x:32779,y:33735,varname:node_5681,prsc:2;n:type:ShaderForge.SFN_NormalVector,id:4633,x:32779,y:33862,prsc:2,pt:False;n:type:ShaderForge.SFN_Multiply,id:1820,x:33184,y:33272,varname:node_1820,prsc:2|A-7450-OUT,B-4799-OUT,C-6868-OUT;n:type:ShaderForge.SFN_OneMinus,id:6868,x:33054,y:33833,varname:node_6868,prsc:2|IN-5985-OUT;n:type:ShaderForge.SFN_Clamp01,id:5985,x:33014,y:33990,varname:node_5985,prsc:2|IN-8207-OUT;n:type:ShaderForge.SFN_Multiply,id:8207,x:32786,y:34169,varname:node_8207,prsc:2|A-9733-OUT,B-259-OUT;n:type:ShaderForge.SFN_Depth,id:9733,x:32574,y:34169,varname:node_9733,prsc:2;n:type:ShaderForge.SFN_OneMinus,id:259,x:32656,y:34399,varname:node_259,prsc:2|IN-8373-OUT;n:type:ShaderForge.SFN_RemapRange,id:8373,x:32460,y:34447,varname:node_8373,prsc:2,frmn:0,frmx:1,tomn:0.95,tomx:1|IN-7038-OUT;n:type:ShaderForge.SFN_Slider,id:7038,x:31991,y:34500,ptovrint:True,ptlb:Fade distance,ptin:_FadeDistance,varname:_FadeDistance,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.8,max:1;proporder:6372-3137-797-7832-4216-1438-7038;pass:END;sub:END;*/
+
+Shader "NOT_Lonely/NOTLonely_Fog" {
+    Properties {
+        _MainTex ("Noise", 2D) = "white" {}
+        _Mask ("Mask", 2D) = "white" {}
+        _TintColor ("Color", Color) = (0.5,0.5,0.5,1)
+        _Emission ("Emission", Float ) = 0
+        _Speed ("Speed", Float ) = 0.3
+        _Softness ("Softness", Range(0, 5)) = 3
+        _FadeDistance ("Fade distance", Range(0, 1)) = 0.8
+        [HideInInspector]_Cutoff ("Alpha cutoff", Range(0,1)) = 0.5
+    }
+    SubShader {
+        Tags {
+            "IgnoreProjector"="True"
+            "Queue"="Transparent+1"
+            "RenderType"="Transparent"
+        }
+        Pass {
+            Name "FORWARD"
+            Tags {
+                "LightMode"="ForwardBase"
+            }
+            Blend SrcAlpha OneMinusSrcAlpha
+            Cull Off
+            ZWrite Off
+            
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            #define UNITY_PASS_FORWARDBASE
+            #include "UnityCG.cginc"
+            #pragma multi_compile_fwdbase
+            #pragma only_renderers d3d9 d3d11 xboxone ps4 wiiu 
+            #pragma target 3.0
+            uniform float4 _LightColor0;
+            uniform sampler2D _CameraDepthTexture;
+            uniform float4 _TimeEditor;
+            uniform float4 _TintColor;
+            uniform float _Softness;
+            uniform sampler2D _Mask; uniform float4 _Mask_ST;
+            uniform float _Emission;
+            uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
+            uniform float _Speed;
+            uniform float _FadeDistance;
+            struct VertexInput {
+                float4 vertex : POSITION;
+                float3 normal : NORMAL;
+                float2 texcoord0 : TEXCOORD0;
+                float4 vertexColor : COLOR;
+            };
+            struct VertexOutput {
+                float4 pos : SV_POSITION;
+                float2 uv0 : TEXCOORD0;
+                float4 posWorld : TEXCOORD1;
+                float3 normalDir : TEXCOORD2;
+                float4 vertexColor : COLOR;
+                float4 projPos : TEXCOORD3;
+            };
+            VertexOutput vert (VertexInput v) {
+                VertexOutput o = (VertexOutput)0;
+                o.uv0 = v.texcoord0;
+                o.vertexColor = v.vertexColor;
+                o.normalDir = UnityObjectToWorldNormal(v.normal);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
+                float3 lightColor = _LightColor0.rgb;
+                o.pos = UnityObjectToClipPos(v.vertex );
+                o.projPos = ComputeScreenPos (o.pos);
+                COMPUTE_EYEDEPTH(o.projPos.z);
+                return o;
+            }
+            float4 frag(VertexOutput i, float facing : VFACE) : COLOR {
+                float isFrontFace = ( facing >= 0 ? 1 : 0 );
+                float faceSign = ( facing >= 0 ? 1 : -1 );
+                i.normalDir = normalize(i.normalDir);
+                i.normalDir *= faceSign;
+                float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
+                float3 normalDirection = i.normalDir;
+                float sceneZ = max(0,LinearEyeDepth (UNITY_SAMPLE_DEPTH(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)))) - _ProjectionParams.g);
+                float partZ = max(0,i.projPos.z - _ProjectionParams.g);
+                float3 lightDirection = normalize(_WorldSpaceLightPos0.xyz);
+                float3 lightColor = _LightColor0.rgb;
+////// Lighting:
+                float attenuation = 1;
+                float3 attenColor = attenuation * _LightColor0.xyz;
+/////// Diffuse:
+                float NdotL = max(0.0,dot( normalDirection, lightDirection ));
+                float3 directDiffuse = max( 0.0, NdotL) * attenColor;
+                float3 indirectDiffuse = float3(0,0,0);
+                indirectDiffuse += UNITY_LIGHTMODEL_AMBIENT.rgb; // Ambient Light
+                float3 node_2393 = (i.vertexColor.rgb*_TintColor.rgb);
+                float3 diffuseColor = node_2393;
+                float3 diffuse = (directDiffuse + indirectDiffuse) * diffuseColor;
+////// Emissive:
+                float3 emissive = (node_2393*_Emission);
+/// Final Color:
+                float3 finalColor = diffuse + emissive;
+                float4 node_677 = _Time + _TimeEditor;
+                float node_7329 = 0.5;
+                float2 node_1099 = ((i.uv0*node_7329)+((node_677.r*node_7329)*_Speed)*float2(1,0));
+                float4 _Noise02 = tex2D(_MainTex,TRANSFORM_TEX(node_1099, _MainTex));
+                float4 _Noise01 = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
+                float4 _Mask_var = tex2D(_Mask,TRANSFORM_TEX(i.uv0, _Mask));
+                return fixed4(finalColor,(lerp(0.0,((_Noise02.r*_Noise01.r)*i.vertexColor.a*_TintColor.a*_Mask_var.r*saturate((sceneZ-partZ)/_Softness)),saturate(pow((distance(i.posWorld.rgb,_WorldSpaceCameraPos)/1.0),1.2)))*dot(viewDirection,i.normalDir)*(1.0 - saturate((partZ*(1.0 - (_FadeDistance*0.05000001+0.95)))))));
+            }
+            ENDCG
+        }
+        Pass {
+            Name "FORWARD_DELTA"
+            Tags {
+                "LightMode"="ForwardAdd"
+            }
+            Blend One One
+            Cull Off
+            ZWrite Off
+            
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            #define UNITY_PASS_FORWARDADD
+            #include "UnityCG.cginc"
+            #include "AutoLight.cginc"
+            #pragma multi_compile_fwdadd
+            #pragma only_renderers d3d9 d3d11 xboxone ps4 wiiu 
+            #pragma target 3.0
+            uniform float4 _LightColor0;
+            uniform sampler2D _CameraDepthTexture;
+            uniform float4 _TimeEditor;
+            uniform float4 _TintColor;
+            uniform float _Softness;
+            uniform sampler2D _Mask; uniform float4 _Mask_ST;
+            uniform float _Emission;
+            uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
+            uniform float _Speed;
+            uniform float _FadeDistance;
+            struct VertexInput {
+                float4 vertex : POSITION;
+                float3 normal : NORMAL;
+                float2 texcoord0 : TEXCOORD0;
+                float4 vertexColor : COLOR;
+            };
+            struct VertexOutput {
+                float4 pos : SV_POSITION;
+                float2 uv0 : TEXCOORD0;
+                float4 posWorld : TEXCOORD1;
+                float3 normalDir : TEXCOORD2;
+                float4 vertexColor : COLOR;
+                float4 projPos : TEXCOORD3;
+                LIGHTING_COORDS(4,5)
+            };
+            VertexOutput vert (VertexInput v) {
+                VertexOutput o = (VertexOutput)0;
+                o.uv0 = v.texcoord0;
+                o.vertexColor = v.vertexColor;
+                o.normalDir = UnityObjectToWorldNormal(v.normal);
+                o.posWorld = mul(unity_ObjectToWorld, v.vertex);
+                float3 lightColor = _LightColor0.rgb;
+                o.pos = UnityObjectToClipPos(v.vertex );
+                o.projPos = ComputeScreenPos (o.pos);
+                COMPUTE_EYEDEPTH(o.projPos.z);
+                TRANSFER_VERTEX_TO_FRAGMENT(o)
+                return o;
+            }
+            float4 frag(VertexOutput i, float facing : VFACE) : COLOR {
+                float isFrontFace = ( facing >= 0 ? 1 : 0 );
+                float faceSign = ( facing >= 0 ? 1 : -1 );
+                i.normalDir = normalize(i.normalDir);
+                i.normalDir *= faceSign;
+                float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
+                float3 normalDirection = i.normalDir;
+                float sceneZ = max(0,LinearEyeDepth (UNITY_SAMPLE_DEPTH(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.projPos)))) - _ProjectionParams.g);
+                float partZ = max(0,i.projPos.z - _ProjectionParams.g);
+                float3 lightDirection = normalize(lerp(_WorldSpaceLightPos0.xyz, _WorldSpaceLightPos0.xyz - i.posWorld.xyz,_WorldSpaceLightPos0.w));
+                float3 lightColor = _LightColor0.rgb;
+////// Lighting:
+                float attenuation = LIGHT_ATTENUATION(i);
+                float3 attenColor = attenuation * _LightColor0.xyz;
+/////// Diffuse:
+                float NdotL = max(0.0,dot( normalDirection, lightDirection ));
+                float3 directDiffuse = max( 0.0, NdotL) * attenColor;
+                float3 node_2393 = (i.vertexColor.rgb*_TintColor.rgb);
+                float3 diffuseColor = node_2393;
+                float3 diffuse = directDiffuse * diffuseColor;
+/// Final Color:
+                float3 finalColor = diffuse;
+                float4 node_677 = _Time + _TimeEditor;
+                float node_7329 = 0.5;
+                float2 node_1099 = ((i.uv0*node_7329)+((node_677.r*node_7329)*_Speed)*float2(1,0));
+                float4 _Noise02 = tex2D(_MainTex,TRANSFORM_TEX(node_1099, _MainTex));
+                float4 _Noise01 = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
+                float4 _Mask_var = tex2D(_Mask,TRANSFORM_TEX(i.uv0, _Mask));
+                return fixed4(finalColor * (lerp(0.0,((_Noise02.r*_Noise01.r)*i.vertexColor.a*_TintColor.a*_Mask_var.r*saturate((sceneZ-partZ)/_Softness)),saturate(pow((distance(i.posWorld.rgb,_WorldSpaceCameraPos)/1.0),1.2)))*dot(viewDirection,i.normalDir)*(1.0 - saturate((partZ*(1.0 - (_FadeDistance*0.05000001+0.95)))))),0);
+            }
+            ENDCG
+        }
+        Pass {
+            Name "ShadowCaster"
+            Tags {
+                "LightMode"="ShadowCaster"
+            }
+            Offset 1, 1
+            Cull Off
+            
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            #define UNITY_PASS_SHADOWCASTER
+            #include "UnityCG.cginc"
+            #include "Lighting.cginc"
+            #pragma fragmentoption ARB_precision_hint_fastest
+            #pragma multi_compile_shadowcaster
+            #pragma only_renderers d3d9 d3d11 xboxone ps4 wiiu 
+            #pragma target 3.0
+            struct VertexInput {
+                float4 vertex : POSITION;
+            };
+            struct VertexOutput {
+                V2F_SHADOW_CASTER;
+            };
+            VertexOutput vert (VertexInput v) {
+                VertexOutput o = (VertexOutput)0;
+                o.pos = UnityObjectToClipPos(v.vertex );
+                TRANSFER_SHADOW_CASTER(o)
+                return o;
+            }
+            float4 frag(VertexOutput i, float facing : VFACE) : COLOR {
+                float isFrontFace = ( facing >= 0 ? 1 : 0 );
+                float faceSign = ( facing >= 0 ? 1 : -1 );
+                SHADOW_CASTER_FRAGMENT(i)
+            }
+            ENDCG
+        }
+    }
+    FallBack "NOT_Lonely/Mobile/NOTLonely_Fog_mobile"
+    CustomEditor "ShaderForgeMaterialInspector"
+}
