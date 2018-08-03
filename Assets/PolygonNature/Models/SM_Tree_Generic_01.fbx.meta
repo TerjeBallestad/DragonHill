@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: b110fdc8bc6ceea41aa943a1b2618d51
 ModelImporter:
-  serializedVersion: 23
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: SM_Tree_Generic_01_Leaves
@@ -76,8 +76,6 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 0
     normalImportMode: 0

@@ -4,14 +4,13 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Skydome_SunRise
   m_Shader: {fileID: 4800000, guid: fefd59ec9a96d744aa1f9f12938abd4e, type: 3}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -58,10 +57,10 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Distance: 74.84
+    - _Distance: 56.5
     - _DstBlend: 10
     - _EmissionScaleUI: 0
-    - _Falloff: 5
+    - _Falloff: 1
     - _GlossMapScale: 1
     - _Glossiness: 1
     - _GlossyReflections: 1

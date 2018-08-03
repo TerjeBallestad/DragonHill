@@ -8,15 +8,15 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1000012734690910}
-  m_IsPrefabAsset: 1
+  m_IsPrefabParent: 1
 --- !u!1 &1000012734690910
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
+  serializedVersion: 5
   m_Component:
   - component: {fileID: 4000013324409630}
   - component: {fileID: 33000014277475892}
@@ -32,9 +32,9 @@ GameObject:
 --- !u!1 &1000012777230172
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
+  serializedVersion: 5
   m_Component:
   - component: {fileID: 4000012466242272}
   - component: {fileID: 108000013075780112}
@@ -48,9 +48,9 @@ GameObject:
 --- !u!1 &1000013049448178
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
+  serializedVersion: 5
   m_Component:
   - component: {fileID: 4000014001266442}
   - component: {fileID: 33000012974398970}
@@ -65,7 +65,7 @@ GameObject:
 --- !u!4 &4000012466242272
 Transform:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012777230172}
   m_LocalRotation: {x: 0.33606806, y: -0.33592287, z: 0.6221388, w: 0.6222198}
@@ -78,7 +78,7 @@ Transform:
 --- !u!4 &4000013324409630
 Transform:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012734690910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -93,7 +93,7 @@ Transform:
 --- !u!4 &4000014001266442
 Transform:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013049448178}
   m_LocalRotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
@@ -106,7 +106,7 @@ Transform:
 --- !u!23 &23000013532295152
 MeshRenderer:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013049448178}
   m_Enabled: 1
@@ -141,7 +141,7 @@ MeshRenderer:
 --- !u!23 &23000014048172818
 MeshRenderer:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012734690910}
   m_Enabled: 1
@@ -176,21 +176,21 @@ MeshRenderer:
 --- !u!33 &33000012974398970
 MeshFilter:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013049448178}
   m_Mesh: {fileID: 4300002, guid: e0dd295d8c2dec442a4d13866f7767d3, type: 3}
 --- !u!33 &33000014277475892
 MeshFilter:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012734690910}
   m_Mesh: {fileID: 4300000, guid: e0dd295d8c2dec442a4d13866f7767d3, type: 3}
 --- !u!64 &64000013822543258
 MeshCollider:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012734690910}
   m_Material: {fileID: 0}
@@ -204,7 +204,7 @@ MeshCollider:
 --- !u!108 &108000013075780112
 Light:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012777230172}
   m_Enabled: 1
@@ -231,7 +231,6 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967039
   m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1.5
   m_ColorTemperature: 6570

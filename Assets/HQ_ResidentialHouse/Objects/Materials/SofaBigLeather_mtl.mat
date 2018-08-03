@@ -4,10 +4,10 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: SofaBigLeather_mtl
-  m_Shader: {fileID: 4800000, guid: 091ec7c571bd151439144632790d9aac, type: 3}
+  m_Shader: {fileID: 4800000, guid: 658009ab6d8537e4fb56b3ca1195ae87, type: 3}
   m_ShaderKeywords: _EMISSION _NORMALMAP _SPECGLOSSMAP
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -35,10 +35,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Emission:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -73,12 +69,10 @@ Material:
     m_Floats:
     - _AOPower: 0.5
     - _BumpScale: 1
-    - _Contrast: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _Dirt: 0.5
     - _DstBlend: 0
-    - _EmissionIntensity: 0
     - _EmissionScaleUI: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -96,7 +90,6 @@ Material:
     - _Color01: {r: 0.08823532, g: 0.072825454, b: 0.060986176, a: 1}
     - _Color02: {r: 0.4852941, g: 0.4005399, b: 0.33542386, a: 1}
     - _Color03: {r: 1, g: 1, b: 1, a: 1}
-    - _Color04: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

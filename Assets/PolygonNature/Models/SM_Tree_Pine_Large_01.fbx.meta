@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 057c6b2cd3ad952429804f5c48ae202b
 ModelImporter:
-  serializedVersion: 23
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: SM_Tree_Pine_Large_01_Leaves
@@ -76,8 +76,6 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 0
     normalImportMode: 0

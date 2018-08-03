@@ -4,15 +4,14 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: SmokeFX_mtl
-  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHABLEND_ON _EMISSION
-  m_LightmapFlags: 1
+  m_Shader: {fileID: 4800000, guid: 84598a1fbdf607d42b435c8b7be3890b, type: 3}
+  m_ShaderKeywords: _ALPHABLEND_ON
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 3001
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -35,11 +34,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: d3b54dc232030aa419641bada5726a4a, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3b777dc23d9528640906a2b29cf8e5bc, type: 3}
+        m_Texture: {fileID: 2800000, guid: e015e56be98f30d4283923bb0429191c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -64,18 +63,23 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
     - _EmissionScaleUI: 1.32
+    - _GlossMapScale: 1
     - _Glossiness: 0
-    - _InvFade: 0.84
+    - _GlossyReflections: 1
+    - _InvFade: 1
     - _Metallic: 0
     - _Mode: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _Softness: 1
+    - _SpecularHighlights: 1
     - _SrcBlend: 5
     - _UVSec: 0
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.397}
     - _EmissionColor: {r: 1.32, g: 1.32, b: 1.32, a: 1.32}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TintColor: {r: 1, g: 1, b: 1, a: 0.1764706}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}

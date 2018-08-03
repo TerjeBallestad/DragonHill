@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Ground_mtl
   m_Shader: {fileID: 4800000, guid: 93dc5f62b719d4b4a90907f75442a694, type: 3}
@@ -99,19 +99,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalXZ:
-        m_Texture: {fileID: 2800000, guid: ad5ab704b4310e6488aba63332144846, type: 3}
+        m_Texture: {fileID: 2800000, guid: f32012f7802fe324692ba83821974e9d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalY01:
-        m_Texture: {fileID: 2800000, guid: 78e2f7f758371f54cba51d1daf40a44d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 71e341bf853ad4048b9733563b34d3d3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalY02:
-        m_Texture: {fileID: 2800000, guid: ad2dd91cdc11f8f43a926c7820f96c8a, type: 3}
+        m_Texture: {fileID: 2800000, guid: ea5726bfc40150946add95c23f63de57, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _NormalY03:
-        m_Texture: {fileID: 2800000, guid: edddba054057d7c49b0669dc00b76644, type: 3}
+        m_Texture: {fileID: 2800000, guid: fc1c1cba7892b714bbbc07c114b92c28, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Occlusion:
@@ -143,19 +143,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureXZ:
-        m_Texture: {fileID: 2800000, guid: 66bfffbfc1446e24dbf6081d20fc9daa, type: 3}
+        m_Texture: {fileID: 2800000, guid: f3782b583e48a7d4080d3f6caf77f846, type: 3}
         m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
     - _TextureY01:
-        m_Texture: {fileID: 2800000, guid: 42a91a090222e8948a229c10e2b60a81, type: 3}
+        m_Texture: {fileID: 2800000, guid: e1aebce6f51f0bf4495ba48bc89e902f, type: 3}
         m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
     - _TextureY02:
-        m_Texture: {fileID: 2800000, guid: 66205e406ebef6c44a53d4a36dada6c1, type: 3}
+        m_Texture: {fileID: 2800000, guid: c255cdf7d69c559468dd270884f9766f, type: 3}
         m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     - _TextureY03:
-        m_Texture: {fileID: 2800000, guid: aad8ca4f67b548c4c968d86efaec686d, type: 3}
+        m_Texture: {fileID: 2800000, guid: e06a077b8869329458769f48c8150bf5, type: 3}
         m_Scale: {x: 6, y: 6}
         m_Offset: {x: 0, y: 0}
     - _VerticalTexture:
@@ -188,7 +188,7 @@ Material:
     - _GlossinessY03: 1
     - _GlossyReflections: 1
     - _HeightBlend: 1
-    - _HeightBlendHardness: 0.279
+    - _HeightBlendHardness: 0.6
     - _Metallic: 0
     - _MetallicXZ: 0
     - _MetallicY01: 0

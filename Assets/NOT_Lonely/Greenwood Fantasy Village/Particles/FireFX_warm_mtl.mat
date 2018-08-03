@@ -4,14 +4,13 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: FireFX_warm_mtl
   m_Shader: {fileID: 4800000, guid: ef829bbec70e8a948a764d98d695be6a, type: 3}
   m_ShaderKeywords: _ALPHABLEND_ON _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -63,7 +62,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
-    - _Emission: 50
+    - _Emission: 60
     - _EmissionScaleUI: 1.32
     - _Glossiness: 0
     - _InvFade: 1.5
@@ -79,4 +78,4 @@ Material:
     - _EmissionColor: {r: 1.32, g: 1.32, b: 1.32, a: 1.32}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TintColor: {r: 1, g: 0.8235294, b: 0.8235294, a: 1}
+    - _TintColor: {r: 1, g: 0.5066937, b: 0.058823526, a: 1}

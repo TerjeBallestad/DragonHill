@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Skydome_Classic_Trees
   m_Shader: {fileID: 4800000, guid: fefd59ec9a96d744aa1f9f12938abd4e, type: 3}
