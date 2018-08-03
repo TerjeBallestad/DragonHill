@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Medieval_Glow_FX
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
@@ -71,21 +71,17 @@ Material:
     - _EmissionGain: 0.436
     - _EmissionScaleUI: 60
     - _EmissionTextureContrast: 1
-    - _GlossMapScale: 1
     - _Glossiness: 0
-    - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
     - _DiffuseColor: {r: 1, g: 0.47586206, b: 0, a: 1}
-    - _EmissionColor: {r: 3.7500017, g: 0.07853407, b: 0, a: 60}
+    - _EmissionColor: {r: 60, g: 1.2413799, b: 0, a: 60}
     - _EmissionColorUI: {r: 1, g: 0.020689664, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}

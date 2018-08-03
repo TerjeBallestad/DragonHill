@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 1d078102ec86f8147a8b99b53fa1e1cf
 ModelImporter:
-  serializedVersion: 23
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: SF_Env_Preset_Undead_Castle_01_MeshPart0
@@ -68,8 +68,6 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 15
     normalImportMode: 1
