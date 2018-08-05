@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Walls01_07_mtl
-  m_Shader: {fileID: 4800000, guid: 658009ab6d8537e4fb56b3ca1195ae87, type: 3}
+  m_Shader: {fileID: 4800000, guid: 091ec7c571bd151439144632790d9aac, type: 3}
   m_ShaderKeywords: _EMISSION _NORMALMAP _SPECGLOSSMAP
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -35,6 +35,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Emission:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -69,10 +73,12 @@ Material:
     m_Floats:
     - _AOPower: 2
     - _BumpScale: 1
+    - _Contrast: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _Dirt: 2.94
     - _DstBlend: 0
+    - _EmissionIntensity: 0
     - _EmissionScaleUI: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
